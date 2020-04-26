@@ -6,7 +6,6 @@ const init = () => {
         valuesOfArray: Array.from(document.querySelector('.array').value.split(',')),
     };
     
-   
     const samFunction = (n, d, array) => {
         const temp = array.slice(d, n);
         array = array.slice(0, d);
@@ -16,8 +15,8 @@ const init = () => {
     samFunction(input.numberOfElements, input.numberOfRotations, input.valuesOfArray);
 }
 
-const checkfunction = () => {
-    if(document.querySelector('.length').value <= 0) {
+const checkFunction = () => {
+    if (document.querySelector('.length').value <= 0) {
         alert('Number of the array elements can\'t be 0 or negative');
     } else if (document.querySelector('.rotations').value > document.querySelector('.length').value) {
         alert('Number of the rotations can\'t be greater than number of elements');
